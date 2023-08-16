@@ -1,30 +1,90 @@
-<!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yurara Ito</title>
-
-    <link rel="stylesheet" href="index.css" >
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <a href="index.html"><img src="images/Logo.png" alt="biglogo" class="biglogo"></a>
-    
-    <nav>
-        <ul id="g-navi">
-            <li><a href="index.html">HOME</a></li>
-            <li><a>ABOUT</a></li>
-            <li><a>WORKS</a></li>
-            <li><a>CONTACT</a></li>
-            <li><a>VLOG</a></li>
-        </ul>
-    </nav>
-    <h1>Yurara Ito</h1>
-    <img src="images/me.png" alt="myicon" class="myicon">
-    
+    <header class="header">
+        <div class="header_inner">
+            <div class="header_ham_flex">
+                <h1 class="header_logo logo">
+                    <a href="index.html">
+                        <img src="images/Logo.png" alt="Yurara portfoliosite" class="planelogo">
+                    </a>
+                </h1>
+                <div class="nav-wrapper">
+                    <nav class="header-nav">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="">HOME</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <button class="burger-btn hamBtn">
+                    <img class="hamBtn_open" src="" alt="menu">
+                    <img class="hamBtn_close" src="" alt="close">
 
+                </button>
+            </div>
+        <div class="header_pc_nav">
+            <div class="pc_nav_inner">
+                <ul class="pc_nav_menu">
+                    <li class="pc_nav_list">
+                        <a class="pc_nav_link">HOME</a>
+                    </li>
+                    <li class="pc_nav_list">
+                        <a class="pc_nav_link">ABOUT</a>
+                    </li>
+                    <li class="pc_nav_list">
+                        <a class="pc_nav_link">WORKS</a>
+                    </li>
+                    <li class="pc_nav_list">
+                        <a class="pc_nav_link">CONTACT</a>
+                    </li>
+                    <li class="pc_nav_list">
+                        <a class="pc_nav_link">VLOG</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main_title title">
+            <h1 class="yuraraito">Yurara Ito</h1>
+            <img src="images/me.png" alt="myicon" class="myicon">
+        </section>
+        <section class="main_about about">
+            <div class="about_inner">
+                <div class="about_title_all">
+                    <img class="small_airplane" src="images/Logo_small.PNG" alt="small logo">
+                    <h2 class="about_jTitle">私について</h2>
+                    <h3 class="about_eTitle">- About -</h3>
+                </div>
+            </div>
+            
+
+
+        </section>
+        <section class="main_project project">
+
+        </section>
+        <section class="main_contact contact">
+
+        </section>
+        
+    </main>
+    <footer></footer>
+
+    <script>
+        function show_nav(){
+            var element = document.getElementById("mbNav");
+            element.classList.toggle("mb_nav_wrapper fade")
+        }
+    </script>
 </body>
 </html>
